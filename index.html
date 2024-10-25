@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Call App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <button id="toggleAudio" onclick="toggleAudio()">Mute Audio</button>
+        <button id="toggleVideo" onclick="toggleVideo()">Mute Video</button>
+        <button id="shareLink" onclick="shareInviteLink()">Share Link</button>
+        <select id="filterSelect" onchange="applyFilter(this.value)">
+            <option value="">No Filter</option>
+            <option value="grayscale(100%)">Grayscale</option>
+            <option value="sepia(100%)">Sepia</option>
+            <option value="blur(5px)">Blur</option>
+            <option value="invert(100%)">Invert Colors</option>
+        </select>
+    </div>
+    <div id="video-grid"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
